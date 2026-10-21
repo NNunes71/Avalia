@@ -1,0 +1,53 @@
+{
+  "id": "aidapt",
+  "name": "AiDAPT",
+  "builtin": true,
+  "series": [
+    {
+      "id": "s1",
+      "name": "Série 1 (exame)",
+      "builtinSrc": "POOL",
+      "blueprint": "exam"
+    },
+    {
+      "id": "s2",
+      "name": "Série 2 (manual completo)",
+      "builtinSrc": "POOL_S2"
+    },
+    {
+      "id": "s3",
+      "name": "Série 3 (por capítulos)",
+      "builtinSrc": "POOL_S3"
+    },
+    {
+      "id": "s4",
+      "name": "Série 4 (avançada: Power BI + T-SQL)",
+      "builtinSrc": "POOL_S4"
+    },
+    {
+      "id": "s5",
+      "name": "Série 5 (consultas & pegadinhas)",
+      "builtinSrc": "POOL_S5"
+    },
+    {
+      "id": "s6",
+      "name": "Série 6 (PL-300 Microsoft)",
+      "builtinSrc": "POOL_S6"
+    }
+  ],
+  "folder": "AiDAPT",
+  "activeSeries": "s4",
+  "_ser": {
+    "id": "s4",
+    "name": "Série 4 (avançada: Power BI + T-SQL)",
+    "builtinSrc": "POOL_S4"
+  },
+  "testPrefsBySer": {
+    "s4": {
+      "areas": null,
+      "lmin": "I",
+      "lmax": "III",
+      "size": 80
+    }
+  }
+}

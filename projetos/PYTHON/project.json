@@ -1,0 +1,38 @@
+{
+  "id": "python",
+  "name": "Python",
+  "builtin": false,
+  "passMark": 60,
+  "testSize": 40,
+  "context": "Certificação Cegid Data Analyst (AiDAPT) — exame \"Data Analysis\". 2 secções (Python para Análise de Dados; Modelos Analíticos com Python), 3 níveis, 40 perguntas, aprovação >= 60%. Banco alinhado ao Exame Tipo (ET_Exame_Data_Analysis_24787), ao Guia de Revisão (C13) e ao Guia de Estudo.",
+  "series": [
+    {
+      "id": "s1",
+      "name": "Série 1 (exame Data Analysis)",
+      "bankKey": "va_bank_python_s1",
+      "order": [
+        "Python para Análise de Dados",
+        "Modelos Analíticos com Python"
+      ]
+    }
+  ],
+  "activeSeries": "s1",
+  "folder": "PYTHON",
+  "_ser": {
+    "id": "s1",
+    "name": "Série 1 (exame Data Analysis)",
+    "bankKey": "va_bank_python_s1",
+    "order": [
+      "Python para Análise de Dados",
+      "Modelos Analíticos com Python"
+    ]
+  },
+  "testPrefsBySer": {
+    "s1": {
+      "areas": null,
+      "lmin": "I",
+      "lmax": "III",
+      "size": 40
+    }
+  }
+}

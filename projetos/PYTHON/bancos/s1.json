@@ -1,0 +1,2477 @@
+[
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-type-int",
+  "q": "Qual é a saída de print(type(3)) em Python?",
+  "opts": [
+   "<class 'int'>",
+   "<class 'float'>",
+   "<class 'str'>",
+   "<class 'bool'>"
+  ],
+  "c": 0,
+  "e": "3 é um literal inteiro, logo type(3) devolve <class 'int'>.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-type-float",
+  "q": "Qual é a saída de print(type(3.0))?",
+  "opts": [
+   "<class 'float'>",
+   "<class 'int'>",
+   "<class 'double'>",
+   "<class 'decimal'>"
+  ],
+  "c": 0,
+  "e": "Um número com ponto decimal é float; Python não tem tipo 'double' nem 'decimal' embutido para literais.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-type-bool",
+  "q": "Qual é a saída de print(type(True))?",
+  "opts": [
+   "<class 'bool'>",
+   "<class 'int'>",
+   "<class 'str'>",
+   "<class 'bit'>"
+  ],
+  "c": 0,
+  "e": "True/False são do tipo bool (que é, internamente, uma subclasse de int).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-empty-braces",
+  "q": "O que cria um par de chavetas vazio, {} ?",
+  "opts": [
+   "Um dicionário vazio (dict)",
+   "Um conjunto vazio (set)",
+   "Uma lista vazia",
+   "Um tuplo vazio"
+  ],
+  "c": 0,
+  "e": "{} cria um dict vazio; para um conjunto vazio usa-se set().",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-empty-set",
+  "q": "Como se cria um conjunto (set) vazio em Python?",
+  "opts": [
+   "set()",
+   "{}",
+   "[]",
+   "()"
+  ],
+  "c": 0,
+  "e": "{} é um dicionário vazio; o conjunto vazio obtém-se com set().",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-delimiters",
+  "q": "Que delimitadores definem, respetivamente, uma lista, um tuplo e um dicionário?",
+  "opts": [
+   "[ ] , ( ) , { }",
+   "( ) , [ ] , { }",
+   "{ } , ( ) , [ ]",
+   "[ ] , { } , ( )"
+  ],
+  "c": 0,
+  "e": "Lista usa [], tuplo usa () e dicionário usa { } com pares chave:valor.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-int-cast",
+  "q": "Qual é o resultado de int('10') ?",
+  "opts": [
+   "10 (um inteiro)",
+   "'10' (texto)",
+   "10.0 (decimal)",
+   "Erro"
+  ],
+  "c": 0,
+  "e": "int() converte texto que representa um inteiro no número 10.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-truediv",
+  "q": "Que operador devolve sempre um número decimal (float), mesmo quando a divisão é exata?",
+  "opts": [
+   "/ (divisão)",
+   "// (divisão inteira)",
+   "% (resto)",
+   "** (potência)"
+  ],
+  "c": 0,
+  "e": "A divisão / devolve sempre float: 10 / 2 é 5.0.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-floordiv",
+  "q": "Qual é o resultado de 7 // 2 ?",
+  "opts": [
+   "3",
+   "3.5",
+   "1",
+   "4"
+  ],
+  "c": 0,
+  "e": "// é a divisão inteira (floor): 7 // 2 = 3.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-mod",
+  "q": "Qual é o resultado de 7 % 2 ?",
+  "opts": [
+   "1",
+   "3",
+   "0",
+   "3.5"
+  ],
+  "c": 0,
+  "e": "% devolve o resto da divisão: 7 a dividir por 2 dá resto 1.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-pow",
+  "q": "Qual é o resultado de 2 ** 3 ?",
+  "opts": [
+   "8",
+   "6",
+   "9",
+   "23"
+  ],
+  "c": 0,
+  "e": "** é a potência: 2 elevado a 3 = 8.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-augassign",
+  "q": "Qual será o valor de x após: x = 5; x += 3 ?",
+  "opts": [
+   "8",
+   "53",
+   "2",
+   "Erro"
+  ],
+  "c": 0,
+  "e": "x += 3 é equivalente a x = x + 3, logo 5 + 3 = 8.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-eq-assign",
+  "q": "Qual a diferença entre == e = em Python?",
+  "opts": [
+   "== compara igualdade; = atribui um valor a uma variável",
+   "== atribui; = compara",
+   "São equivalentes",
+   "== só funciona com números"
+  ],
+  "c": 0,
+  "e": "= é atribuição; == é o operador de comparação de igualdade.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-str-repeat",
+  "q": "Qual é o resultado de 'ab' * 3 ?",
+  "opts": [
+   "'ababab'",
+   "'ab3'",
+   "'ab ab ab'",
+   "Erro"
+  ],
+  "c": 0,
+  "e": "O operador * repete a string: 'ab' três vezes dá 'ababab'.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-str-plus-num",
+  "q": "O que acontece ao executar 'idade: ' + 5 ?",
+  "opts": [
+   "Levanta um erro (TypeError), pois não se soma texto com número",
+   "Devolve 'idade: 5'",
+   "Devolve 'idade: 5.0'",
+   "Devolve 5"
+  ],
+  "c": 0,
+  "e": "Não se concatena str com int; é preciso converter: 'idade: ' + str(5).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-indent",
+  "q": "Em Python, o que define um bloco de código (por exemplo, dentro de um if)?",
+  "opts": [
+   "A indentação (espaços/tabulação)",
+   "As chavetas { }",
+   "O ponto e vírgula ;",
+   "A palavra 'end'"
+  ],
+  "c": 0,
+  "e": "Python usa a indentação para delimitar blocos, ao contrário de linguagens com { }.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-elif",
+  "q": "Qual é a palavra-chave para uma condição intermédia num encadeamento condicional?",
+  "opts": [
+   "elif",
+   "elseif",
+   "else if",
+   "elsif"
+  ],
+  "c": 0,
+  "e": "Em Python usa-se elif (não 'elseif' nem 'else if').",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-while",
+  "q": "Que estrutura repete um bloco enquanto uma condição for verdadeira?",
+  "opts": [
+   "while",
+   "for",
+   "repeat",
+   "loop"
+  ],
+  "c": 0,
+  "e": "while repete controlado por uma condição; for percorre uma sequência.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-for-iter",
+  "q": "O que faz for c in 'abc': ?",
+  "opts": [
+   "Percorre cada carácter da string, um de cada vez",
+   "Dá erro, porque for só funciona com listas",
+   "Imprime o número de caracteres",
+   "Percorre apenas o primeiro carácter"
+  ],
+  "c": 0,
+  "e": "for percorre qualquer iterável, incluindo cada carácter de uma string.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-break",
+  "q": "O que faz a instrução break dentro de um ciclo?",
+  "opts": [
+   "Termina o ciclo imediatamente",
+   "Salta para a próxima iteração",
+   "Não faz nada (placeholder)",
+   "Reinicia o ciclo"
+  ],
+  "c": 0,
+  "e": "break sai do ciclo; continue salta para a iteração seguinte; pass não faz nada.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-range",
+  "q": "Que valores gera list(range(5)) ?",
+  "opts": [
+   "[0, 1, 2, 3, 4]",
+   "[1, 2, 3, 4, 5]",
+   "[0, 1, 2, 3, 4, 5]",
+   "[5]"
+  ],
+  "c": 0,
+  "e": "range(5) gera de 0 a 4 (o limite superior é exclusivo).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-def",
+  "q": "Como se define uma função em Python?",
+  "opts": [
+   "def nome(args): seguido de um bloco indentado",
+   "function nome(args) { }",
+   "func nome(args):",
+   "define nome(args):"
+  ],
+  "c": 0,
+  "e": "A palavra-chave é def, seguida do nome, parênteses e dois pontos.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-input",
+  "q": "Que tipo devolve a função input() quando o utilizador escreve 42?",
+  "opts": [
+   "str (texto)",
+   "int",
+   "float",
+   "bool"
+  ],
+  "c": 0,
+  "e": "input() devolve sempre uma string; para número há que converter com int()/float().",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-comment",
+  "q": "Qual é o símbolo de comentário de uma linha em Python?",
+  "opts": [
+   "#",
+   "//",
+   "/* */",
+   "--"
+  ],
+  "c": 0,
+  "e": "Comentários de uma linha começam por #; docstrings usam aspas triplas.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-append-list",
+  "q": "Após lst = [1, 2]; lst.append([3, 4]), qual é lst ?",
+  "opts": [
+   "[1, 2, [3, 4]]",
+   "[1, 2, 3, 4]",
+   "[1, 2, 3]",
+   "[[1, 2], [3, 4]]"
+  ],
+  "c": 0,
+  "e": "append adiciona o objeto como um único elemento; a lista [3,4] fica aninhada. Para juntar elementos usa-se extend.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-remove",
+  "q": "Que método remove um elemento de uma lista pelo seu valor?",
+  "opts": [
+   "remove()",
+   "pop()",
+   "del",
+   "discard()"
+  ],
+  "c": 0,
+  "e": "remove(valor) apaga a primeira ocorrência desse valor; pop(i) e del removem por posição.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-len",
+  "q": "Que função devolve o número de elementos de uma lista, string ou dicionário?",
+  "opts": [
+   "len()",
+   "count()",
+   "size()",
+   "length()"
+  ],
+  "c": 0,
+  "e": "len() dá o tamanho de qualquer coleção; count() conta ocorrências de um valor.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-abs",
+  "q": "Qual é o resultado de abs(-7) ?",
+  "opts": [
+   "7",
+   "-7",
+   "0",
+   "'7'"
+  ],
+  "c": 0,
+  "e": "abs() devolve o valor absoluto (módulo), logo abs(-7) = 7.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-sum",
+  "q": "Qual é o resultado de sum([1, 2, 3, 4]) ?",
+  "opts": [
+   "10",
+   "4",
+   "[1,2,3,4]",
+   "1234"
+  ],
+  "c": 0,
+  "e": "sum() soma os elementos de um iterável numérico: 1+2+3+4 = 10.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "I",
+  "k": "py1-round",
+  "q": "Qual é o resultado de round(3.14159, 2) ?",
+  "opts": [
+   "3.14",
+   "3.0",
+   "3.1416",
+   "3"
+  ],
+  "c": 0,
+  "e": "round(x, n) arredonda a n casas decimais: 3.14.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-dict-get",
+  "q": "Qual a diferença entre d['chave'] e d.get('chave') quando a chave não existe?",
+  "opts": [
+   "d['chave'] levanta KeyError; d.get('chave') devolve None",
+   "Ambos devolvem None",
+   "Ambos levantam KeyError",
+   "d.get() apaga a chave"
+  ],
+  "c": 0,
+  "e": "get() é seguro: devolve None (ou um valor por omissão) em vez de erro, e não altera o dicionário.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-dict-get-default",
+  "q": "O que devolve {'a': 1}.get('b', 0) ?",
+  "opts": [
+   "0",
+   "None",
+   "KeyError",
+   "1"
+  ],
+  "c": 0,
+  "e": "O segundo argumento de get() é o valor devolvido quando a chave não existe.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-set-dedup",
+  "q": "Qual é o resultado de set([1, 1, 2, 2, 3]) ?",
+  "opts": [
+   "{1, 2, 3}",
+   "[1, 2, 3]",
+   "{1, 1, 2, 2, 3}",
+   "(1, 2, 3)"
+  ],
+  "c": 0,
+  "e": "Um conjunto elimina duplicados; a ordem não é garantida.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-set-inter",
+  "q": "Que operador calcula a interseção de dois conjuntos a e b?",
+  "opts": [
+   "a & b",
+   "a | b",
+   "a - b",
+   "a + b"
+  ],
+  "c": 0,
+  "e": "& é interseção, | é união, - é diferença; + não é válido entre conjuntos.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-try",
+  "q": "Numa estrutura try/except/else/finally, quando corre o bloco finally?",
+  "opts": [
+   "Sempre, tenha havido erro ou não",
+   "Só quando há erro",
+   "Só quando não há erro",
+   "Nunca, é opcional"
+  ],
+  "c": 0,
+  "e": "finally executa sempre; else corre apenas se não houve exceção.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-open-w",
+  "q": "No open(ficheiro, 'w'), o que acontece se o ficheiro já existir?",
+  "opts": [
+   "O conteúdo é apagado (truncado) e reescrito",
+   "O texto é acrescentado ao fim",
+   "Levanta erro",
+   "Abre só para leitura"
+  ],
+  "c": 0,
+  "e": "'w' trunca o ficheiro; para acrescentar usa-se 'a'; 'x' falha se já existir.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-open-a",
+  "q": "Que modo do open() acrescenta texto ao fim do ficheiro sem apagar o existente?",
+  "opts": [
+   "'a' (append)",
+   "'w' (write)",
+   "'r' (read)",
+   "'x' (exclusive)"
+  ],
+  "c": 0,
+  "e": "'a' abre para acrescentar; 'w' apaga o conteúdo anterior.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-with",
+  "q": "Qual a vantagem de usar with open(...) as f: ?",
+  "opts": [
+   "Fecha o ficheiro automaticamente no fim do bloco, mesmo que ocorra um erro",
+   "É mais rápido a ler",
+   "Permite ler ficheiros binários apenas",
+   "Converte o ficheiro em DataFrame"
+  ],
+  "c": 0,
+  "e": "O gestor de contexto garante f.close() automático.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-listcomp",
+  "q": "O que produz [x**2 for x in range(4)] ?",
+  "opts": [
+   "[0, 1, 4, 9]",
+   "[1, 4, 9, 16]",
+   "[0, 1, 2, 3]",
+   "[2, 4, 6, 8]"
+  ],
+  "c": 0,
+  "e": "Compreensão de lista: quadrados de 0,1,2,3 = [0,1,4,9].",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-listcomp-if",
+  "q": "O que produz [x for x in range(6) if x % 2 == 0] ?",
+  "opts": [
+   "[0, 2, 4]",
+   "[1, 3, 5]",
+   "[0, 1, 2, 3, 4, 5]",
+   "[2, 4, 6]"
+  ],
+  "c": 0,
+  "e": "A condição filtra apenas os pares de 0 a 5: [0, 2, 4].",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-nparray-mult",
+  "q": "Se a = np.array([1, 2, 3]), qual é o resultado de a * 2 ?",
+  "opts": [
+   "array([2, 4, 6])",
+   "array([1, 2, 3, 1, 2, 3])",
+   "[1, 2, 3, 1, 2, 3]",
+   "Erro"
+  ],
+  "c": 0,
+  "e": "Num array NumPy a multiplicação é elemento a elemento; numa lista Python, * repetiria a sequência.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-list-mult",
+  "q": "Qual é o resultado de [1, 2, 3] * 2 (lista Python)?",
+  "opts": [
+   "[1, 2, 3, 1, 2, 3]",
+   "[2, 4, 6]",
+   "[1, 2, 3, 2]",
+   "Erro"
+  ],
+  "c": 0,
+  "e": "Em listas Python, * repete a sequência (não multiplica elementos como no NumPy).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-npzeros",
+  "q": "Que função do NumPy cria um array preenchido com zeros?",
+  "opts": [
+   "np.zeros()",
+   "np.empty()",
+   "np.null()",
+   "np.blank()"
+  ],
+  "c": 0,
+  "e": "np.zeros(forma) cria zeros; np.ones() uns; np.full() um valor; np.empty() sem inicializar.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-col-series",
+  "q": "Que tipo de objeto devolve df['coluna'] ?",
+  "opts": [
+   "Uma Series (1 dimensão)",
+   "Um DataFrame",
+   "Uma lista",
+   "Um array NumPy"
+  ],
+  "c": 0,
+  "e": "Selecionar uma coluna com df['c'] devolve uma Series.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-cols-df",
+  "q": "Que tipo de objeto devolve df[['c1', 'c2']] (lista de colunas)?",
+  "opts": [
+   "Um DataFrame",
+   "Uma Series",
+   "Uma lista de Series",
+   "Um array"
+  ],
+  "c": 0,
+  "e": "Selecionar com uma lista de colunas devolve um DataFrame (mesmo que seja só uma).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-dropna",
+  "q": "O que faz df.dropna() ?",
+  "opts": [
+   "Remove as linhas que contêm valores em falta (NaN)",
+   "Substitui os NaN por 0",
+   "Conta os valores em falta",
+   "Preenche os NaN com a média"
+  ],
+  "c": 0,
+  "e": "dropna() remove linhas (ou colunas) com NaN; para substituir usa-se fillna().",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-fillna",
+  "q": "O que faz df.fillna(0) ?",
+  "opts": [
+   "Substitui todos os valores em falta (NaN) por 0",
+   "Remove as linhas com NaN",
+   "Conta os zeros",
+   "Remove os zeros"
+  ],
+  "c": 0,
+  "e": "fillna(valor) substitui os NaN pelo valor indicado.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-head-default",
+  "q": "Quantas linhas mostra df.head() por omissão?",
+  "opts": [
+   "5",
+   "10",
+   "1",
+   "Todas"
+  ],
+  "c": 0,
+  "e": "head() mostra as 5 primeiras linhas por omissão (parâmetro ajustável).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-filter-cond",
+  "q": "Como se selecionam as linhas em que a coluna idade é maior que 30?",
+  "opts": [
+   "df[df['idade'] > 30]",
+   "df['idade'] > 30 only",
+   "df.filter(idade > 30)",
+   "df.where(idade, 30)"
+  ],
+  "c": 0,
+  "e": "Indexação booleana: df[df['idade'] > 30] devolve as linhas que cumprem a condição.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-filter-and",
+  "q": "Ao combinar duas condições num filtro de DataFrame, o que é obrigatório?",
+  "opts": [
+   "Usar & / | e envolver cada condição em parênteses",
+   "Usar as palavras and / or",
+   "Usar vírgulas entre condições",
+   "Usar + entre condições"
+  ],
+  "c": 0,
+  "e": "df[(df['a']>1) & (df['b']<5)] — usam-se &/| e parênteses, não and/or.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-colmean",
+  "q": "Como se calcula a média da coluna salario de um DataFrame df?",
+  "opts": [
+   "df['salario'].mean()",
+   "df.mean('salario')",
+   "mean(df.salario)",
+   "df['salario'].average()"
+  ],
+  "c": 0,
+  "e": "Chama-se o método .mean() sobre a Series: df['salario'].mean().",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-falsy",
+  "q": "Qual destes valores é considerado 'falso' (falsy) num contexto lógico?",
+  "opts": [
+   "[] (lista vazia)",
+   "[0] (lista com um zero)",
+   "'0' (string)",
+   "-1"
+  ],
+  "c": 0,
+  "e": "Coleções vazias, 0, '' e None são falsy; uma lista com elementos (mesmo [0]) é truthy.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-fstring",
+  "q": "Que forma produz a string 'Total: 50' se total = 50?",
+  "opts": [
+   "f'Total: {total}'",
+   "'Total: total'",
+   "f'Total: total'",
+   "'Total: ' total"
+  ],
+  "c": 0,
+  "e": "As f-strings interpolam variáveis entre chavetas: f'Total: {total}'.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-slice",
+  "q": "Qual é o resultado de [10, 20, 30, 40][1:3] ?",
+  "opts": [
+   "[20, 30]",
+   "[20, 30, 40]",
+   "[10, 20]",
+   "[20]"
+  ],
+  "c": 0,
+  "e": "A fatia [1:3] inclui o índice 1 e exclui o 3: [20, 30].",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-enumerate",
+  "q": "Para que serve a função enumerate() num ciclo for?",
+  "opts": [
+   "Obter, em simultâneo, o índice e o valor de cada elemento",
+   "Contar o total de elementos",
+   "Ordenar a sequência",
+   "Remover duplicados"
+  ],
+  "c": 0,
+  "e": "for i, v in enumerate(lista) dá o índice i e o valor v de cada iteração.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-zip",
+  "q": "O que faz zip([1, 2], ['a', 'b']) ?",
+  "opts": [
+   "Empareja elementos: (1,'a'), (2,'b')",
+   "Soma os elementos",
+   "Concatena as listas",
+   "Ordena as listas"
+  ],
+  "c": 0,
+  "e": "zip empareja elemento a elemento, produzindo tuplos (1,'a') e (2,'b').",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "II",
+  "k": "py2-isna",
+  "q": "Que método do pandas devolve True onde há valores em falta?",
+  "opts": [
+   "isna() (ou isnull())",
+   "dropna()",
+   "fillna()",
+   "notna()"
+  ],
+  "c": 0,
+  "e": "isna()/isnull() marcam os NaN com True; notna() faz o inverso.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-mutable",
+  "q": "Qual destas estruturas é imutável (não pode ser alterada após criada)?",
+  "opts": [
+   "Tuplo",
+   "Lista",
+   "Dicionário",
+   "Conjunto (set)"
+  ],
+  "c": 0,
+  "e": "O tuplo é imutável; listas, dicionários e sets são mutáveis.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-tuple-assign",
+  "q": "O que acontece ao tentar t[0] = 9 num tuplo t = (1, 2, 3) ?",
+  "opts": [
+   "Levanta TypeError (os tuplos são imutáveis)",
+   "t passa a (9, 2, 3)",
+   "Cria um novo tuplo",
+   "Devolve None"
+  ],
+  "c": 0,
+  "e": "Não é possível reatribuir elementos de um tuplo — são imutáveis.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-copy-ref",
+  "q": "Após b = a (em que a é uma lista), alterar b[0] também altera a. Porquê?",
+  "opts": [
+   "b e a referenciam o mesmo objeto; para copiar usa-se a.copy()",
+   "b é uma cópia independente",
+   "a é imutável",
+   "= cria sempre uma cópia"
+  ],
+  "c": 0,
+  "e": "A atribuição simples cria outra referência para o mesmo objeto; para cópia usa-se copy() (ou list(a)).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-is",
+  "q": "O que testa o operador is em a is b ?",
+  "opts": [
+   "Se a e b são o mesmo objeto na memória (mesma identidade)",
+   "Se têm o mesmo valor",
+   "Se são do mesmo tipo",
+   "Se a é maior que b"
+  ],
+  "c": 0,
+  "e": "is compara identidade (mesmo objeto); == compara valores.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-sorted-vs-sort",
+  "q": "Qual a diferença entre sorted(lst) e lst.sort() ?",
+  "opts": [
+   "sorted() devolve uma nova lista ordenada; sort() ordena a lista original e devolve None",
+   "São idênticos",
+   "sort() devolve uma nova lista",
+   "sorted() altera a lista original"
+  ],
+  "c": 0,
+  "e": "sorted() não altera o original e devolve nova lista; sort() ordena in-place e devolve None.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-lambda-filter",
+  "q": "O que retorna list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4])) ?",
+  "opts": [
+   "[2, 4]",
+   "[1, 3]",
+   "(2, 4)",
+   "True"
+  ],
+  "c": 0,
+  "e": "filter mantém os elementos em que a função é verdadeira (os pares): [2, 4].",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-map-type",
+  "q": "Que tipo de objeto devolve map(func, lista) antes de o converter?",
+  "opts": [
+   "Um objeto map (iterador), que se converte com list()",
+   "Uma lista",
+   "Um tuplo",
+   "Um dicionário"
+  ],
+  "c": 0,
+  "e": "map() e filter() devolvem iteradores preguiçosos; usa-se list() para materializar.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-all",
+  "q": "O que devolve all([1, 2, 0, 3]) ?",
+  "opts": [
+   "False (o 0 é falsy)",
+   "True",
+   "0",
+   "Erro"
+  ],
+  "c": 0,
+  "e": "all() é True só se todos forem truthy; o 0 torna o resultado False.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-module-ext",
+  "q": "Que extensão deve ter um ficheiro para ser importado como módulo Python?",
+  "opts": [
+   ".py",
+   ".python",
+   ".mod",
+   ".pyc"
+  ],
+  "c": 0,
+  "e": "Os módulos são ficheiros .py; importam-se pelo nome sem a extensão.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-pip-import",
+  "q": "Qual a diferença entre instalar (pip install) e importar (import) uma biblioteca?",
+  "opts": [
+   "pip install coloca a biblioteca no sistema (uma vez); import carrega-a no script (sempre que corre)",
+   "São a mesma coisa",
+   "import instala a biblioteca",
+   "pip install carrega a biblioteca no código"
+  ],
+  "c": 0,
+  "e": "Instala-se uma vez com pip; em cada execução é preciso importar.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-df-vs-series",
+  "q": "Quantas dimensões têm, respetivamente, um DataFrame e uma Series do pandas?",
+  "opts": [
+   "DataFrame: 2 (tabela); Series: 1 (coluna)",
+   "Ambos: 2",
+   "DataFrame: 1; Series: 2",
+   "Ambos: 1"
+  ],
+  "c": 0,
+  "e": "DataFrame é bidimensional (linhas × colunas); Series é unidimensional.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-columns",
+  "q": "Que tipo de objeto devolve o atributo df.columns ?",
+  "opts": [
+   "Um Index (convertível em lista com list(df.columns))",
+   "Uma lista Python",
+   "Um dicionário",
+   "Uma Series"
+  ],
+  "c": 0,
+  "e": "df.columns devolve um objeto Index; para uma lista simples usa-se list(df.columns).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-dtypes",
+  "q": "O que devolve df.dtypes ?",
+  "opts": [
+   "O tipo de dados de cada coluna",
+   "As estatísticas de cada coluna",
+   "O número de linhas",
+   "Os valores em falta"
+  ],
+  "c": 0,
+  "e": "dtypes indica o tipo (int64, float64, object...) de cada coluna.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-apply-axis1",
+  "q": "Como aplicar a função func a cada linha de um DataFrame df?",
+  "opts": [
+   "df.apply(func, axis=1)",
+   "df.map(func)",
+   "df.applymap(func, axis=1)",
+   "df.pipe(func, axis=1)"
+  ],
+  "c": 0,
+  "e": "apply com axis=1 percorre linha a linha; axis=0 (omissão) percorre colunas.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-inplace",
+  "q": "O que faz o argumento inplace=True num método do pandas (ex.: df.fillna(0, inplace=True))?",
+  "opts": [
+   "Altera o objeto original e devolve None",
+   "Devolve uma cópia modificada",
+   "Não tem efeito",
+   "Cria sempre um novo DataFrame"
+  ],
+  "c": 0,
+  "e": "inplace=True modifica o próprio objeto e não devolve nada (None).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-isnull-sum",
+  "q": "O que devolve df.isnull().sum() ?",
+  "opts": [
+   "O número de valores em falta (nulos) por coluna",
+   "A percentagem de nulos",
+   "O total de linhas",
+   "As estatísticas das colunas"
+  ],
+  "c": 0,
+  "e": "isnull() dá True/False e sum() conta os True por coluna. Para percentagem usa-se df.isnull().mean()*100.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-groupby",
+  "q": "O que descreve o padrão do groupby() no pandas?",
+  "opts": [
+   "Dividir–aplicar–combinar (split–apply–combine)",
+   "Filtrar–ordenar–remover",
+   "Ler–limpar–guardar",
+   "Juntar–transpor–exportar"
+  ],
+  "c": 0,
+  "e": "groupby divide por grupos, aplica uma função de agregação e combina os resultados.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-merge-join",
+  "q": "Que função do pandas junta duas tabelas por uma coluna-chave partilhada (equivalente a um JOIN)?",
+  "opts": [
+   "pd.merge(a, b, on='id')",
+   "pd.concat([a, b])",
+   "a.append(b)",
+   "pd.join_tables(a, b)"
+  ],
+  "c": 0,
+  "e": "pd.merge junta por chave; concat empilha; join também junta mas por índice.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-corr-two",
+  "q": "Como se calcula a correlação entre duas colunas específicas a e b de um DataFrame?",
+  "opts": [
+   "df['a'].corr(df['b'])",
+   "df.corr('a', 'b')",
+   "np.corr(df['a'], df['b'])",
+   "df.correlation(a, b)"
+  ],
+  "c": 0,
+  "e": "corr() aplicado a uma Series recebe a outra Series. df.corr('a','b'), np.corr e df.correlation() não existem.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-corr-matrix",
+  "q": "O que devolve df.corr() (sem argumentos) num DataFrame numérico?",
+  "opts": [
+   "A matriz de correlação entre todas as colunas numéricas",
+   "A correlação entre as duas primeiras colunas",
+   "Uma única Series",
+   "O desvio-padrão de cada coluna"
+  ],
+  "c": 0,
+  "e": "df.corr() devolve a matriz de correlações par a par de todas as colunas numéricas.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-plot-line",
+  "q": "Como gerar um gráfico de linhas a partir da coluna 'Vendas' de um DataFrame?",
+  "opts": [
+   "df.plot.line(y='Vendas')",
+   "df.chart('Vendas')",
+   "df.graph(y='Vendas')",
+   "df.lineplot('Vendas')"
+  ],
+  "c": 0,
+  "e": "O pandas expõe df.plot.line(...) (assente no Matplotlib) para gráficos rápidos.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-npmean-axis",
+  "q": "Numa matriz 2D, o que calcula np.mean(M, axis=0) ?",
+  "opts": [
+   "A média de cada coluna",
+   "A média de cada linha",
+   "A média de todos os elementos",
+   "O número de colunas"
+  ],
+  "c": 0,
+  "e": "axis=0 agrega ao longo das linhas, dando uma média por coluna; axis=1 dá por linha.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-loc-iloc",
+  "q": "Qual afirmação descreve corretamente a diferença entre .loc e .iloc?",
+  "opts": [
+   ".loc usa rótulos (labels) e .iloc usa índices inteiros (posição)",
+   ".loc usa índices inteiros e .iloc usa rótulos",
+   "Ambos usam apenas rótulos",
+   "Ambos usam apenas índices inteiros"
+  ],
+  "c": 0,
+  "e": "loc = label (rótulo); iloc = integer location (posição).",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-loc-slice",
+  "q": "Porque é que df.loc[0:3] pode devolver mais linhas do que df.iloc[0:3] ?",
+  "opts": [
+   "loc inclui o rótulo final (0 a 3 = 4 linhas); iloc exclui a posição final (3 linhas)",
+   "loc exclui o fim e iloc inclui",
+   "São sempre iguais",
+   "iloc inclui sempre mais linhas"
+  ],
+  "c": 0,
+  "e": "Com loc a fatia é inclusiva no fim; com iloc é exclusiva, como nas fatias normais de Python.",
+  "fixed": true
+ },
+ {
+  "sec": "Python para Análise de Dados",
+  "lvl": "III",
+  "k": "py3-map-series",
+  "q": "O que faz o método map() aplicado a uma Series?",
+  "opts": [
+   "Transforma cada elemento aplicando a função/dicionário indicado",
+   "Junta duas Series",
+   "Ordena a Series",
+   "Remove duplicados"
+  ],
+  "c": 0,
+  "e": "Series.map aplica uma função ou mapeamento elemento a elemento.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-pandas",
+  "q": "Qual é a biblioteca Python mais usada para manipular dados tabulares?",
+  "opts": [
+   "pandas",
+   "NumPy",
+   "Matplotlib",
+   "scikit-learn"
+  ],
+  "c": 0,
+  "e": "pandas é a biblioteca de referência para tabelas (DataFrame); NumPy é para arrays numéricos.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-import-pd",
+  "q": "Qual é a forma convencional de importar o pandas?",
+  "opts": [
+   "import pandas as pd",
+   "import pd from pandas",
+   "from pandas import *",
+   "require('pandas')"
+  ],
+  "c": 0,
+  "e": "A convenção é import pandas as pd (e numpy as np, matplotlib.pyplot as plt, seaborn as sns).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-import-plt",
+  "q": "Como se importa convencionalmente o módulo de gráficos do Matplotlib?",
+  "opts": [
+   "import matplotlib.pyplot as plt",
+   "import matplotlib as plt",
+   "from matplotlib import plot",
+   "import pyplot"
+  ],
+  "c": 0,
+  "e": "A convenção é import matplotlib.pyplot as plt.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-readcsv",
+  "q": "Que função do pandas lê um ficheiro CSV para um DataFrame?",
+  "opts": [
+   "pd.read_csv('ficheiro.csv')",
+   "pd.load_csv('ficheiro.csv')",
+   "pd.open_csv('ficheiro.csv')",
+   "pd.import_csv('ficheiro.csv')"
+  ],
+  "c": 0,
+  "e": "pd.read_csv lê CSV; para escrever usa-se df.to_csv.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-tocsv",
+  "q": "Como se grava um DataFrame df num ficheiro CSV?",
+  "opts": [
+   "df.to_csv('saida.csv')",
+   "df.write_csv('saida.csv')",
+   "df.save('saida.csv')",
+   "pd.to_csv(df)"
+  ],
+  "c": 0,
+  "e": "O método de escrita é df.to_csv(...); pd.read_csv é a leitura.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-info",
+  "q": "Que método pandas mostra informações gerais do DataFrame, incluindo tipos de dados e nº de valores não-nulos?",
+  "opts": [
+   "info()",
+   "summary()",
+   "details()",
+   "describe()"
+  ],
+  "c": 0,
+  "e": "info() mostra colunas, tipos e não-nulos; summary() e details() não existem; describe() dá estatísticas.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-describe",
+  "q": "Que informação dá df.describe() para as colunas numéricas?",
+  "opts": [
+   "Estatísticas: contagem, média, desvio, mínimo, quartis e máximo",
+   "Os tipos de dados",
+   "Os valores em falta por coluna",
+   "O número de linhas"
+  ],
+  "c": 0,
+  "e": "describe() devolve estatísticas descritivas; info() é que dá tipos e não-nulos.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-shape",
+  "q": "O que devolve df.shape ?",
+  "opts": [
+   "Um tuplo (nº de linhas, nº de colunas)",
+   "O número total de células",
+   "Os nomes das colunas",
+   "Os tipos de dados"
+  ],
+  "c": 0,
+  "e": "shape devolve (linhas, colunas) do DataFrame.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-valuecounts",
+  "q": "Que método conta quantas vezes aparece cada valor numa coluna?",
+  "opts": [
+   "value_counts()",
+   "nunique()",
+   "count()",
+   "unique()"
+  ],
+  "c": 0,
+  "e": "value_counts() dá a contagem por valor; nunique() dá quantos valores diferentes há.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-nunique",
+  "q": "O que devolve df['cidade'].nunique() ?",
+  "opts": [
+   "O número de valores diferentes (distintos) na coluna",
+   "A contagem de cada valor",
+   "A lista de valores",
+   "O número de nulos"
+  ],
+  "c": 0,
+  "e": "nunique() conta os valores distintos; unique() devolve-os; value_counts() conta cada um.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-head5",
+  "q": "Quantas linhas devolve df.head() por omissão?",
+  "opts": [
+   "As 5 primeiras linhas",
+   "Todas as linhas",
+   "A primeira linha",
+   "As 10 primeiras linhas"
+  ],
+  "c": 0,
+  "e": "head() devolve as 5 primeiras linhas por omissão.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-sortvalues",
+  "q": "Como se ordena um DataFrame df por ordem decrescente da coluna 'vendas'?",
+  "opts": [
+   "df.sort_values('vendas', ascending=False)",
+   "df.sort('vendas', desc=True)",
+   "df.order_by('vendas')",
+   "df.sort_values('vendas', reverse=True)"
+  ],
+  "c": 0,
+  "e": "sort_values com ascending=False ordena por valores decrescentes.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-seaborn",
+  "q": "Qual biblioteca é especializada em gráficos estatísticos e assenta sobre o Matplotlib?",
+  "opts": [
+   "seaborn",
+   "NumPy",
+   "scikit-learn",
+   "pandas"
+  ],
+  "c": 0,
+  "e": "seaborn é a biblioteca de visualização estatística, construída sobre o Matplotlib.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-sklearn",
+  "q": "Qual é a biblioteca de referência para aprendizagem automática (machine learning) em Python?",
+  "opts": [
+   "scikit-learn",
+   "Matplotlib",
+   "seaborn",
+   "pandas"
+  ],
+  "c": 0,
+  "e": "scikit-learn fornece modelos, pré-processamento e métricas de ML.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-arange-linspace",
+  "q": "Qual a diferença entre np.arange() e np.linspace()?",
+  "opts": [
+   "arange recebe o passo; linspace recebe o nº de valores e inclui o extremo final",
+   "São idênticas",
+   "arange inclui o fim; linspace não",
+   "linspace recebe o passo"
+  ],
+  "c": 0,
+  "e": "np.arange(início, fim, passo) exclui o fim; np.linspace(início, fim, n) inclui o fim e gera n valores.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-npmean",
+  "q": "Que função do NumPy calcula a média de um array?",
+  "opts": [
+   "np.mean()",
+   "np.average_value()",
+   "np.med()",
+   "np.sum_mean()"
+  ],
+  "c": 0,
+  "e": "np.mean() calcula a média; np.median() a mediana; np.std() o desvio-padrão.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-plt-line",
+  "q": "Que função do matplotlib.pyplot é a mais usada para desenhar um gráfico de linhas?",
+  "opts": [
+   "plt.plot()",
+   "plt.line()",
+   "plt.draw_line()",
+   "plt.graph()"
+  ],
+  "c": 0,
+  "e": "plt.plot() desenha linhas por omissão; plt.scatter() dispersão, plt.bar() barras, plt.hist() histograma.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-mpl-vs-sns",
+  "q": "Em que se especializa o seaborn face ao Matplotlib?",
+  "opts": [
+   "Gráficos estatísticos de alto nível (distribuições, relações, categorias) com menos código",
+   "Gráficos 3D apenas",
+   "Leitura de ficheiros",
+   "Treino de modelos"
+  ],
+  "c": 0,
+  "e": "seaborn facilita gráficos estatísticos; o Matplotlib é mais baixo nível e flexível.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-hist",
+  "q": "Que gráfico é mais adequado para ver como se distribui uma variável numérica?",
+  "opts": [
+   "Histograma",
+   "Gráfico de dispersão (scatter)",
+   "Gráfico de barras por categoria",
+   "Heatmap"
+  ],
+  "c": 0,
+  "e": "O histograma mostra a distribuição de uma variável numérica (ex.: sns.histplot).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-scatter",
+  "q": "Que gráfico é indicado para ver a relação entre duas variáveis numéricas?",
+  "opts": [
+   "Gráfico de dispersão (scatter)",
+   "Gráfico de barras",
+   "Histograma",
+   "Gráfico circular"
+  ],
+  "c": 0,
+  "e": "O scatter plot relaciona duas variáveis numéricas (ex.: sns.scatterplot).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-boxplot",
+  "q": "Que gráfico ajuda a detetar outliers e comparar a dispersão entre grupos?",
+  "opts": [
+   "Boxplot (diagrama de caixa)",
+   "Gráfico de linhas",
+   "Gráfico circular",
+   "Heatmap"
+  ],
+  "c": 0,
+  "e": "O boxplot desenha quartis e outliers (regra do IQR).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "I",
+  "k": "ma1-readcsv-sep",
+  "q": "Que parâmetro de pd.read_csv define o separador de campos (ex.: ponto e vírgula)?",
+  "opts": [
+   "sep=';'",
+   "delimiter_char=';'",
+   "split=';'",
+   "separator=';'"
+  ],
+  "c": 0,
+  "e": "Usa-se sep (ou delimiter). Ex.: pd.read_csv('f.csv', sep=';').",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-todatetime",
+  "q": "Como converter a coluna de texto 'data' para o tipo datetime?",
+  "opts": [
+   "df['data'] = pd.to_datetime(df['data'])",
+   "df['data'] = df['data'].date()",
+   "df['data'] = datetime(df['data'])",
+   "df['data'] = pd.datetime(df['data'])"
+  ],
+  "c": 0,
+  "e": "pd.to_datetime converte texto em datetime, permitindo depois usar o acessor .dt.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-dtyear",
+  "q": "Depois de converter uma coluna para datetime, como se extrai o ano?",
+  "opts": [
+   "df['data'].dt.year",
+   "df['data'].year()",
+   "df['data'].get_year()",
+   "df['data'].ano"
+  ],
+  "c": 0,
+  "e": "O acessor .dt expõe .year, .month, .dayofweek, etc.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-newcol",
+  "q": "Como criar a coluna 'total' = soma vetorizada de 'q' e 'p'?",
+  "opts": [
+   "df['total'] = df['q'] + df['p']",
+   "df.total = sum('q', 'p')",
+   "df['total'] = df.sum('q', 'p')",
+   "df.add_column('total')"
+  ],
+  "c": 0,
+  "e": "As operações entre colunas são vetorizadas: df['q'] + df['p'].",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-npwhere",
+  "q": "Que função atribui rótulos de texto conforme uma condição (ex.: 'Alto'/'Baixo')?",
+  "opts": [
+   "np.where(df['x'] > 10, 'Alto', 'Baixo')",
+   "df.where('Alto', 'Baixo')",
+   "df.if(df['x'] > 10)",
+   "np.select_label(df['x'])"
+  ],
+  "c": 0,
+  "e": "np.where(condição, valor_se_verdade, valor_se_falso) é a forma vetorizada de um if.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-minmax",
+  "q": "Como normalizar a coluna x para o intervalo [0, 1]?",
+  "opts": [
+   "(df['x'] - df['x'].min()) / (df['x'].max() - df['x'].min())",
+   "df['x'] / df['x'].max()",
+   "np.scale(df['x'])",
+   "df.normalize('x')"
+  ],
+  "c": 0,
+  "e": "Normalização Min–Max: (x − min)/(max − min). df['x']/max e df.normalize() estão errados (este último nem existe).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-zscore",
+  "q": "A padronização Z-score transforma os dados para que fiquem com:",
+  "opts": [
+   "Média 0 e desvio-padrão 1",
+   "Mínimo 0 e máximo 1",
+   "Valores entre -1 e 1 sempre",
+   "Mediana 0 e IQR 1"
+  ],
+  "c": 0,
+  "e": "Z-score: z = (x − média)/desvio → média 0 e desvio 1 (StandardScaler).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-resetindex",
+  "q": "Para que serve reset_index() depois de filtrar ou ordenar um DataFrame?",
+  "opts": [
+   "Reposicionar o índice para 0, 1, 2... (opcionalmente guardando o antigo como coluna)",
+   "Ordenar os valores",
+   "Remover colunas",
+   "Juntar tabelas"
+  ],
+  "c": 0,
+  "e": "reset_index() recria um índice sequencial; drop=True descarta o índice antigo em vez de o passar a coluna.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-groupbymean",
+  "q": "Como calcular a média de 'salario' por 'departamento'?",
+  "opts": [
+   "df.groupby('departamento')['salario'].mean()",
+   "df.mean('departamento', 'salario')",
+   "df.group('departamento').salario",
+   "df.agg('departamento', 'salario')"
+  ],
+  "c": 0,
+  "e": "groupby('chave')['coluna'].mean() segue o padrão dividir–aplicar–combinar.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-pivot",
+  "q": "Que método cria uma tabela dinâmica com agregação (linhas, colunas, valores, função)?",
+  "opts": [
+   "df.pivot_table(values='v', index='p', columns='m', aggfunc='sum')",
+   "df.pivot_chart('v')",
+   "df.crosstab('v')",
+   "df.groupby_table('v')"
+  ],
+  "c": 0,
+  "e": "pivot_table permite indicar index, columns, values e aggfunc.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-merge-default",
+  "q": "Qual é o tipo de junção (how) por omissão em pd.merge()?",
+  "opts": [
+   "inner (apenas as chaves presentes em ambas as tabelas)",
+   "outer",
+   "left",
+   "right"
+  ],
+  "c": 0,
+  "e": "Por omissão how='inner': ficam só as linhas com correspondência em ambas.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-count-methods",
+  "q": "Que método conta o número de valores diferentes (distintos) numa coluna?",
+  "opts": [
+   "nunique()",
+   "value_counts()",
+   "count()",
+   "unique()"
+  ],
+  "c": 0,
+  "e": "nunique() dá o nº de distintos; value_counts() a contagem por valor; count() os não-nulos; unique() os valores.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-sort-multi",
+  "q": "Como ordenar por 'ano' crescente e, dentro de cada ano, por 'vendas' decrescente?",
+  "opts": [
+   "df.sort_values(['ano', 'vendas'], ascending=[True, False])",
+   "df.sort_values('ano', 'vendas')",
+   "df.sort('ano').sort('vendas')",
+   "df.order(['ano', 'vendas'])"
+  ],
+  "c": 0,
+  "e": "sort_values aceita listas de colunas e de direções (ascending) correspondentes.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-corr-matrix-vs-two",
+  "q": "Qual a diferença entre df.corr() e df['a'].corr(df['b']) ?",
+  "opts": [
+   "df.corr() dá a matriz de todas as colunas; df['a'].corr(df['b']) dá um só valor entre duas colunas",
+   "São iguais",
+   "df.corr() dá um único número",
+   "df['a'].corr(df['b']) dá uma matriz"
+  ],
+  "c": 0,
+  "e": "df.corr() devolve a matriz completa; a versão sobre uma Series dá a correlação entre duas colunas.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-quartis",
+  "q": "Como se calculam Q1 e Q3 de uma coluna 'valores' com o pandas?",
+  "opts": [
+   "df['valores'].quantile(0.25) e quantile(0.75)",
+   "df['valores'].median(0.25) e median(0.75)",
+   "df['valores'].quantile(25) e quantile(75)",
+   "df['valores'].mean(0.25) e mean(0.75)"
+  ],
+  "c": 0,
+  "e": "quantile() recebe proporções entre 0 e 1 (0.25, 0.75). median(0.25) e quantile(25) estão errados.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-iqr",
+  "q": "Como se calcula o intervalo interquartil (IQR)?",
+  "opts": [
+   "IQR = Q3 − Q1",
+   "IQR = média − mediana",
+   "IQR = máximo − mínimo",
+   "IQR = Q1 − Q3"
+  ],
+  "c": 0,
+  "e": "O IQR é a amplitude da metade central: Q3 menos Q1.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-outlier-treat",
+  "q": "Qual a abordagem mais adequada para tratar outliers antes de modelar?",
+  "opts": [
+   "Identificar com um método estatístico e depois decidir (corrigir, limitar, transformar ou manter)",
+   "Remover todas as linhas extremas sem análise",
+   "Ignorar, pois não afetam os modelos",
+   "Substituir todos por zero"
+  ],
+  "c": 0,
+  "e": "Primeiro analisa-se; só depois se decide. Nunca apagar às cegas.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-sample",
+  "q": "Como obter uma amostra aleatória de 20% das linhas de um DataFrame?",
+  "opts": [
+   "df.sample(frac=0.2)",
+   "df.sample(0.2)",
+   "df.sample(n=0.2)",
+   "df.random(0.2)"
+  ],
+  "c": 0,
+  "e": "Para uma proporção usa-se frac=0.2; sample(0.2) interpretaria 0.2 como número de linhas e falha.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-nlargest",
+  "q": "Como obter os 3 maiores valores da coluna 'vendas'?",
+  "opts": [
+   "df['vendas'].nlargest(3)",
+   "df['vendas'].top(3)",
+   "df['vendas'].max(3)",
+   "df['vendas'].largest(3)"
+  ],
+  "c": 0,
+  "e": "nlargest(n) devolve os n maiores (nsmallest para os menores).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-rolling",
+  "q": "Como calcular a média móvel de 7 períodos da coluna 'vendas'?",
+  "opts": [
+   "df['vendas'].rolling(7).mean()",
+   "df['vendas'].moving(7)",
+   "df['vendas'].avg(7)",
+   "df['vendas'].window(7).mean()"
+  ],
+  "c": 0,
+  "e": "rolling(n) define a janela e .mean() calcula a média móvel.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-isnull-pct",
+  "q": "Como obter a percentagem de valores em falta por coluna?",
+  "opts": [
+   "df.isnull().mean() * 100",
+   "df.isnull().sum()",
+   "df.isnull().count()",
+   "df.isnull().pct()"
+  ],
+  "c": 0,
+  "e": "isnull().sum() dá o número de nulos; para a percentagem usa-se isnull().mean()*100.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-groupby-agg",
+  "q": "Como obter média e soma de 'v' por grupo 'g' numa só chamada?",
+  "opts": [
+   "df.groupby('g')['v'].agg(['mean', 'sum'])",
+   "df.groupby('g')['v'].mean_sum()",
+   "df.groupby('g').v.mean().sum()",
+   "df.agg('g', ['mean', 'sum'])"
+  ],
+  "c": 0,
+  "e": "agg aceita uma lista de funções, calculando várias agregações de uma vez.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-std-ddof",
+  "q": "Por omissão, o desvio-padrão em pandas (Series.std()) usa que tipo de divisor?",
+  "opts": [
+   "Amostral: divide por n−1 (ddof=1)",
+   "Populacional: divide por n (ddof=0)",
+   "Divide por n+1",
+   "Não usa divisor"
+  ],
+  "c": 0,
+  "e": "O pandas usa ddof=1 (amostral) por omissão; o np.std() usa ddof=0 (populacional).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "II",
+  "k": "ma2-fillna-method",
+  "q": "Que método substitui valores ausentes (NaN) por um valor específico?",
+  "opts": [
+   "fillna()",
+   "replace()",
+   "dropna()",
+   "update()"
+  ],
+  "c": 0,
+  "e": "fillna() preenche os NaN com um valor; dropna() remove linhas com NaN; replace() troca valores (não especificamente NaN).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-transform",
+  "q": "De agg, transform, apply e filter sobre um groupby, qual devolve um resultado com o mesmo nº de linhas do DataFrame original?",
+  "opts": [
+   "transform",
+   "agg",
+   "filter",
+   "nunique"
+  ],
+  "c": 0,
+  "e": "transform devolve o resultado alinhado a cada linha original (ex.: a média do grupo repetida); agg colapsa por grupo.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-rolling-nan",
+  "q": "Ao aplicar rolling(3).mean() a uma série, o que acontece aos 2 primeiros valores?",
+  "opts": [
+   "Ficam NaN, porque ainda não há 3 observações para a janela",
+   "São iguais ao original",
+   "São 0",
+   "São a média global"
+  ],
+  "c": 0,
+  "e": "Uma janela de 3 só produz valor a partir da 3.ª observação; antes disso devolve NaN.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-rank",
+  "q": "Como obter um ranking decrescente (maior valor em 1.º) da coluna 'pontos'?",
+  "opts": [
+   "df['pontos'].rank(ascending=False)",
+   "df['pontos'].rank(desc=True)",
+   "df['pontos'].order(False)",
+   "df['pontos'].ranking()"
+  ],
+  "c": 0,
+  "e": "rank() atribui posições; ascending=False coloca o maior valor em 1.º lugar.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-sample-reproducible",
+  "q": "Que parâmetro torna uma amostra aleatória reprodutível (sai sempre igual)?",
+  "opts": [
+   "random_state (ex.: df.sample(frac=0.2, random_state=42))",
+   "reproducible=True",
+   "seed_fixed=True",
+   "fixed=True"
+  ],
+  "c": 0,
+  "e": "random_state (ou a semente) fixa a aleatoriedade para resultados repetíveis.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-memusage",
+  "q": "Como medir com rigor a memória ocupada por um DataFrame com colunas de texto?",
+  "opts": [
+   "df.memory_usage(deep=True)",
+   "df.size()",
+   "df.memory()",
+   "df.info(memory=True)"
+  ],
+  "c": 0,
+  "e": "memory_usage(deep=True) contabiliza a memória real dos objetos de texto, não só as referências.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-cov",
+  "q": "Que método devolve a matriz de covariância de um DataFrame numérico?",
+  "opts": [
+   "df.cov()",
+   "df.covariance()",
+   "df.corr()",
+   "df.var()"
+  ],
+  "c": 0,
+  "e": "df.cov() dá a covariância (direção da relação, sem escala fixa); df.corr() normaliza para [−1, 1].",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-iqr-rule",
+  "q": "Pela regra do IQR, quando é que um valor é considerado outlier?",
+  "opts": [
+   "Se < Q1 − 1.5×IQR ou > Q3 + 1.5×IQR",
+   "Se < Q1 − 3×IQR ou > Q3 + 3×IQR",
+   "Se estiver fora de média ± desvio-padrão",
+   "Se o z-score estiver entre −1 e 1"
+  ],
+  "c": 0,
+  "e": "A regra clássica usa 1.5×IQR; não é 3×IQR, nem média±desvio, nem z entre −1 e 1.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-linalg-inv",
+  "q": "Que função do NumPy calcula a inversa de uma matriz quadrada?",
+  "opts": [
+   "np.linalg.inv(A)",
+   "np.inverse(A)",
+   "A.inv()",
+   "np.linalg.reverse(A)"
+  ],
+  "c": 0,
+  "e": "np.linalg.inv(A) devolve a inversa; para uma matriz singular levanta erro.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-linalg-solve",
+  "q": "Qual a forma recomendada de resolver um sistema linear Ax = b em NumPy?",
+  "opts": [
+   "np.linalg.solve(A, b)",
+   "A.inv() * b manualmente",
+   "np.divide(b, A)",
+   "np.linalg.system(A, b)"
+  ],
+  "c": 0,
+  "e": "np.linalg.solve é mais estável e eficiente do que calcular a inversa explicitamente.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-multicolinear",
+  "q": "Qual a técnica mais apropriada para lidar com multicolinearidade?",
+  "opts": [
+   "Regularização ou redução de dimensionalidade (ou remover uma das variáveis correlacionadas)",
+   "Substituir valores ausentes por zero",
+   "Aumentar o número de variáveis",
+   "Remover observações extremas"
+  ],
+  "c": 0,
+  "e": "Preditores muito correlacionados tratam-se com regularização, PCA ou removendo uma das variáveis.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-pca",
+  "q": "Que técnica reduz a dimensionalidade preservando a maior variância possível?",
+  "opts": [
+   "PCA (Análise de Componentes Principais)",
+   "One-hot encoding",
+   "Normalização",
+   "Padronização"
+  ],
+  "c": 0,
+  "e": "O PCA cria componentes novas que preservam o máximo de variância.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-crispdm",
+  "q": "Qual é a ordem correta das fases do CRISP-DM?",
+  "opts": [
+   "Negócio → Dados → Preparação → Modelação → Avaliação → Deployment",
+   "Dados → Negócio → Modelação → Preparação → Deployment → Avaliação",
+   "Preparação → Negócio → Dados → Avaliação → Modelação → Deployment",
+   "Modelação → Dados → Negócio → Preparação → Avaliação → Deployment"
+  ],
+  "c": 0,
+  "e": "CRISP-DM: entendimento do negócio, dos dados, preparação, modelação, avaliação e deployment (é iterativo).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-prep-time",
+  "q": "Segundo o CRISP-DM, qual é tipicamente a fase mais demorada de um projeto analítico?",
+  "opts": [
+   "A preparação dos dados (cerca de 60–80% do tempo)",
+   "A modelação",
+   "O deployment",
+   "A definição do negócio"
+  ],
+  "c": 0,
+  "e": "A preparação consome a maior parte do tempo — 'garbage in, garbage out'.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-supervised",
+  "q": "Como se distingue aprendizagem supervisionada de não supervisionada?",
+  "opts": [
+   "Na supervisionada os dados de treino têm a resposta certa (variável-alvo y); na não supervisionada não há alvo",
+   "A supervisionada não usa dados",
+   "A não supervisionada precisa sempre de y",
+   "A supervisionada é só para texto"
+  ],
+  "c": 0,
+  "e": "Pergunta-chave: há variável-alvo conhecida? Se sim → supervisionada (regressão/classificação).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-regression",
+  "q": "Prever o preço de venda de uma casa é um problema de:",
+  "opts": [
+   "Regressão",
+   "Classificação",
+   "Clustering",
+   "Aprendizagem por reforço"
+  ],
+  "c": 0,
+  "e": "O alvo (preço) é numérico contínuo → regressão.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-classif-trap",
+  "q": "Prever se um cliente vai comprar (sim/não, codificado 0/1) é um problema de:",
+  "opts": [
+   "Classificação",
+   "Regressão",
+   "Clustering",
+   "Redução de dimensionalidade"
+  ],
+  "c": 0,
+  "e": "Armadilha: mesmo que y seja 0/1 em números, 'prever se compra' é classificação (alvo categórico).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-clustering",
+  "q": "Segmentar clientes sem rótulos predefinidos é um exemplo de:",
+  "opts": [
+   "Clustering (não supervisionado, ex.: K-means)",
+   "Regressão",
+   "Classificação binária",
+   "Aprendizagem por reforço"
+  ],
+  "c": 0,
+  "e": "Sem variável-alvo, agrupam-se observações parecidas — clustering.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-split-before",
+  "q": "Porque se deve dividir treino/teste ANTES de preparar os dados (imputar, escalar)?",
+  "opts": [
+   "Para evitar data leakage — aprender estatísticas (média, escala) só com o treino",
+   "Para o código correr mais rápido",
+   "Porque o teste não precisa de preparação",
+   "Para aumentar o nº de linhas"
+  ],
+  "c": 0,
+  "e": "Calcular médias/escalas com todo o dataset deixa entrar informação do teste no treino (leakage).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-traintest",
+  "q": "No train_test_split, o que faz o argumento stratify=y?",
+  "opts": [
+   "Mantém a proporção das classes do alvo em treino e teste",
+   "Ordena os dados",
+   "Remove outliers",
+   "Normaliza as colunas"
+  ],
+  "c": 0,
+  "e": "stratify=y preserva a distribuição das classes — importante com alvos desequilibrados.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-randomstate",
+  "q": "Para que serve random_state=42 no train_test_split?",
+  "opts": [
+   "Torna a divisão reprodutível (sai sempre igual)",
+   "Define o tamanho do teste",
+   "Escolhe o modelo",
+   "Normaliza os dados"
+  ],
+  "c": 0,
+  "e": "random_state fixa a aleatoriedade, garantindo repetibilidade.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-testset",
+  "q": "Para que serve o conjunto de teste?",
+  "opts": [
+   "Avaliar o modelo em dados nunca vistos",
+   "Treinar o modelo",
+   "Calcular a mediana para imputar",
+   "Escolher as variáveis"
+  ],
+  "c": 0,
+  "e": "O teste serve só para avaliar; se for usado para treinar ou escolher, deixa de ser 'nunca visto'.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-encoding",
+  "q": "Qual a regra rápida para escolher o encoding de uma variável categórica?",
+  "opts": [
+   "Tem ordem? → Ordinal. Não tem e são poucas categorias? → One-Hot",
+   "Usar sempre One-Hot",
+   "Usar sempre Label",
+   "Nunca codificar categorias"
+  ],
+  "c": 0,
+  "e": "Ordinais com ordem real → Ordinal; nominais com poucas categorias → One-Hot; muitas → Frequency/Target.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-onehot",
+  "q": "Que função do pandas aplica One-Hot encoding a colunas categóricas?",
+  "opts": [
+   "pd.get_dummies(df, columns=['cidade'])",
+   "df.one_hot('cidade')",
+   "pd.encode(df)",
+   "df.dummies()"
+  ],
+  "c": 0,
+  "e": "pd.get_dummies cria uma coluna binária por categoria.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-scaling-need",
+  "q": "Qual destes algoritmos NÃO precisa de scaling (padronização)?",
+  "opts": [
+   "Random Forest / Árvore de Decisão",
+   "KNN",
+   "K-means",
+   "Regressão Logística"
+  ],
+  "c": 0,
+  "e": "As árvores dividem por limiares, logo são insensíveis à escala; KNN, K-means e logística precisam.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-overfit",
+  "q": "Um modelo tem accuracy 0.99 no treino e 0.70 no teste. Isto indica:",
+  "opts": [
+   "Overfitting (decorou o treino e não generaliza)",
+   "Underfitting",
+   "Boa generalização",
+   "Um erro de encoding"
+  ],
+  "c": 0,
+  "e": "Treino muito melhor que teste = overfitting. Ambos fracos = underfitting.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-underfit",
+  "q": "Um modelo com desempenho fraco tanto no treino como no teste sofre de:",
+  "opts": [
+   "Underfitting (modelo simples demais)",
+   "Overfitting",
+   "Boa generalização",
+   "Data leakage"
+  ],
+  "c": 0,
+  "e": "Underfitting: fraco em treino e teste → precisa de mais variáveis/complexidade.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-regmetrics",
+  "q": "Que métricas são usadas para avaliar um modelo de REGRESSÃO?",
+  "opts": [
+   "MAE, RMSE e R²",
+   "Accuracy, precision e recall",
+   "F1-score e matriz de confusão",
+   "AUC e ROC"
+  ],
+  "c": 0,
+  "e": "Regressão: MAE, RMSE (menor é melhor) e R² (maior é melhor).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-imbalanced",
+  "q": "Num dataset de fraude (2% de fraudes), que métrica é mais informativa do que a accuracy?",
+  "opts": [
+   "Recall / F1-score",
+   "Accuracy",
+   "R²",
+   "MAE"
+  ],
+  "c": 0,
+  "e": "Com classes desequilibradas a accuracy engana; recall/F1 medem melhor a deteção da classe rara.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-recall",
+  "q": "A métrica Recall responde a que pergunta?",
+  "opts": [
+   "Dos positivos reais, quantos é que o modelo apanhou?",
+   "Dos que previ positivos, quantos eram mesmo?",
+   "Qual a percentagem total de acertos?",
+   "Qual o erro médio em euros?"
+  ],
+  "c": 0,
+  "e": "Recall = VP/(VP+FN): minimiza falsos negativos (importante em doença/fraude).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-precision",
+  "q": "A métrica Precision responde a que pergunta?",
+  "opts": [
+   "Dos que previ positivos, quantos eram mesmo positivos?",
+   "Dos positivos reais, quantos apanhei?",
+   "Qual a variabilidade explicada?",
+   "Qual a distância típica à média?"
+  ],
+  "c": 0,
+  "e": "Precision = VP/(VP+FP): minimiza falsos alarmes (importante em spam/campanhas).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-confusion",
+  "q": "Que função do scikit-learn produz a matriz de confusão?",
+  "opts": [
+   "confusion_matrix(y_test, y_pred)",
+   "conf_matrix(y_pred)",
+   "df.confusion()",
+   "matrix_score(y_test)"
+  ],
+  "c": 0,
+  "e": "confusion_matrix(y_true, y_pred) cruza as classes reais com as previstas.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-crossval",
+  "q": "O que faz a validação cruzada K-Fold (ex.: K=5)?",
+  "opts": [
+   "Faz 5 treinos/avaliações em divisões diferentes e usa a média — estimativa mais estável",
+   "Treina 5 modelos diferentes e escolhe o melhor no teste",
+   "Divide os dados uma só vez",
+   "Aumenta o tamanho do dataset"
+  ],
+  "c": 0,
+  "e": "K-Fold reparte o treino em K partes; a média das K notas é mais fiável do que uma só divisão.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-kmeans-k",
+  "q": "Que métodos ajudam a escolher o número de grupos K no K-means?",
+  "opts": [
+   "O método do cotovelo (inertia_) e a silhueta",
+   "A matriz de confusão",
+   "O R² e o MAE",
+   "A regra do IQR"
+  ],
+  "c": 0,
+  "e": "Cotovelo (onde a inércia deixa de descer muito) e silhueta (quanto mais alta, grupos mais separados).",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-kmeans-scale",
+  "q": "O que se deve fazer aos dados ANTES de aplicar K-means?",
+  "opts": [
+   "Normalizar/padronizar, porque o K-means usa distâncias",
+   "Nada, o K-means é insensível à escala",
+   "Remover a variável-alvo apenas",
+   "Aplicar One-Hot a tudo"
+  ],
+  "c": 0,
+  "e": "Sem scaling, a variável com números maiores domina as distâncias e distorce os grupos.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-fit-predict",
+  "q": "No padrão do scikit-learn, o que fazem .fit() e .predict()?",
+  "opts": [
+   "fit aprende (só com o treino); predict prevê em dados de teste ou novos",
+   "fit prevê; predict treina",
+   "Ambos treinam",
+   "Ambos preveem"
+  ],
+  "c": 0,
+  "e": "fit = aprender (treino); predict = prever. Trocar de algoritmo é mudar só a linha 'criar modelo'.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-logistic",
+  "q": "Apesar do nome, para que serve a Regressão Logística?",
+  "opts": [
+   "Classificação (calcula a probabilidade de cada classe)",
+   "Regressão de valores contínuos",
+   "Clustering",
+   "Redução de dimensionalidade"
+  ],
+  "c": 0,
+  "e": "A regressão logística classifica (curva em S de probabilidades), apesar do nome.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-log1p",
+  "q": "Que transformação reduz a assimetria de uma variável com cauda à direita (ex.: 'fare')?",
+  "opts": [
+   "np.log1p (logaritmo)",
+   "Multiplicar por 10",
+   "Elevar ao quadrado",
+   "Converter em texto"
+  ],
+  "c": 0,
+  "e": "np.log1p comprime caudas longas, aproximando a distribuição da simetria.",
+  "fixed": true
+ },
+ {
+  "sec": "Modelos Analíticos com Python",
+  "lvl": "III",
+  "k": "ma3-r2",
+  "q": "Na métrica R², o que significa um valor mais alto (próximo de 1)?",
+  "opts": [
+   "O modelo explica melhor a variabilidade do alvo (melhor)",
+   "O erro é maior",
+   "O modelo está pior",
+   "É indiferente"
+  ],
+  "c": 0,
+  "e": "R² mede a % de variabilidade explicada: 1 é perfeito, 0 equivale a prever sempre a média.",
+  "fixed": true
+ }
+]
